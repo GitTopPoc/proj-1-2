@@ -1,0 +1,367 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1124px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header {
+    position: relative;
+    background-color: rgba(25, 189, 154,0.6);
+    background-size: cover;
+    background-position: center;
+    z-index: 1111;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.menu-links-items {
+    font-family: 'Bowlby One SC', cursive;
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.header-content {
+    width: 1100px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-text {
+    padding: 5px 7px;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+}
+
+.menu-links-items li a {
+    text-decoration: none;
+    color: rgb(215, 213, 222);
+}
+
+.menu-links-items li {
+    margin: 0 10px;
+    padding: 0;
+    text-align: center;
+    border: solid 2px transparent;
+}
+
+.menu-links-items li:hover {
+    border: solid 2px white;
+    border-radius: 20px;
+}
+
+.active-page {
+    border: solid 2px white !important;
+    border-radius: 20px;
+}
+
+.menu-links-items-active {
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.logo-text:hover {
+    color: rgb(25, 189, 154);
+}
+
+.logo-text {
+    margin: auto 0;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.header-description {
+    color: white;
+    text-align: center;
+    margin: 150px 0 300px;
+}
+
+.header-header {
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.header-description-text {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.footer-name {
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.footer-name:hover {
+    color: rgb(25, 189, 154);
+}
+
+.footer-copyright {
+    color: gray;
+}
+
+.social-1, .social-2 {
+    margin: auto 2px;
+    max-height: 30px;
+    padding: 6px;
+    font-size: 22px;
+    border-radius: 50%;
+    background-color: rgb(59, 89, 152);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.social-2 {
+    background-color: rgb(38, 166, 209);
+}
+
+.fa-facebook {
+    padding: 6px 10px;
+}
+
+.block-heading {
+    font-size: 26px;
+    color: rgb(51, 59, 70);
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+.caption {
+    color: rgb(129, 134, 142);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.portfolio {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.green {
+    color: rgb(25, 189, 154);
+}
+
+.green-hr {
+    background-color: rgb(25, 189, 154);
+    border-radius: 1px;
+    text-decoration: none;
+    max-width: 50px;
+    border: 1px solid rgb(25, 189, 154);
+    margin: 10px;
+}
+
+.portfolio-works-row {
+    max-width: 270px;
+    width: 270px;
+    margin: 50px 0 0 0;
+}
+
+.portfolio-works {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-row-block-sizing::before{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: none;
+    animation: fadein 0.3s;
+}
+
+.portfolio-row-block-sizing:hover::before, .portfolio-row-block-sizing:hover .is-visible{
+    display: block;
+    cursor: pointer;
+}
+
+.is-visible {
+    display: none;
+    margin-top: 0;
+    animation: fadein 0.3s;
+}
+
+.z-in {
+    z-index: 10;
+}
+
+.portfolio-row-block-sizing{
+    background-repeat: no-repeat;
+    text-align: left;
+    background-size: cover;
+    padding: 0px 10px 0 25px;
+    position: relative;
+    z-index: 1;
+    margin: 5px;
+    
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}
+
+
+.portfolio-row-block {
+    background-image: url(../image/PORTFOLIO-1.png);
+    height: 360px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-2 {
+    background-image: url(../image/PORTFOLIO-2.png);
+    height: 360px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-3 {
+    background-image: url(../image/PORTFOLIO-3.png);
+    max-height: 270px;
+    height: 270px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-4 {
+    background-image: url(../image/PORTFOLIO-4.png);
+    height: 230px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-5 {
+    background-image: url(../image/PORTFOLIO-5.png);
+    height: 385px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-6 {
+    background-image: url(../image/PORTFOLIO-6.png);
+    height: 375px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-7 {
+    background-image: url(../image/PORTFOLIO-7.png);
+    height: 310px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-8 {
+    background-image: url(../image/PORTFOLIO-8.png);
+    height: 400px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-9 {
+    background-image: url(../image/PORTFOLIO-9.png);
+    height: 280px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-10 {
+    background-image: url(../image/PORTFOLIO-10.png);
+    height: 230px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-11 {
+    background-image: url(../image/PORTFOLIO-11.png);
+    height: 385px;
+    max-width: 270px;
+}
+
+.portfolio-row-block-12 {
+    background-image: url(../image/PORTFOLIO-12.png);
+    height: 375px;
+    max-width: 270px;
+}
+
+.portfolio-link {
+    text-decoration: none;
+}
+
+.portfolio-block-heading {
+    padding-top: 70px;
+}
+
+
+.start-project {
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+
+
+.button {
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    color: black;
+    padding: 8px 28px;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+.button:hover {
+    color: rgb(255,255,255);
+    border: solid 2px  rgb(255,255,255);
+}
+
+.project-start-content {
+    max-width: 1070px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-image: url(../image/GREEN-IMG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project-start {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,411 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header {
+    position: relative;
+    background-image: url('../image/MAIN-PHOTO.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    padding: 1px;
+}
+
+header::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.menu-links-items {
+    font-family: 'Bowlby One SC', cursive;
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    align-items: center;
+}
+
+.menu-text {
+    padding: 5px 7px;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+}
+
+.menu-links-items li a {
+    text-decoration: none;
+    color: rgb(215, 213, 222);
+}
+
+.menu-links-items li {
+    margin: 0 10px;
+    padding: 0;
+    text-align: center;
+    border: solid 2px transparent;
+}
+
+.menu-links-items li:hover {
+    border: solid 2px white;
+    border-radius: 20px;
+}
+
+.active-page {
+    border: solid 2px white !important;
+    border-radius: 20px;
+}
+
+.menu-links-items-active {
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.logo-text:hover {
+    color: rgb(25, 189, 154);
+}
+
+.logo-text {
+    margin: auto 0;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.header-description {
+    color: white;
+    text-align: center;
+    margin: 150px 0 300px;
+}
+
+.header-header {
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.header-description-text {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.footer-name {
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.footer-name:hover {
+    color: rgb(25, 189, 154);
+}
+
+.footer-copyright {
+    color: gray;
+}
+
+.social-1, .social-2 {
+    margin: auto 2px;
+    max-height: 30px;
+    padding: 6px;
+    font-size: 22px;
+    border-radius: 50%;
+    background-color: rgb(59, 89, 152);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.social-2 {
+    background-color: rgb(38, 166, 209);
+}
+
+.fa-facebook {
+    padding: 6px 10px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px auto 40px;
+}
+
+.about-description {
+    max-width: 470px;
+    margin: auto 0;
+}
+
+.button {
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    color: black;
+    padding: 8px 28px;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.button:hover {
+    color: rgb(25, 189, 154);
+    border: solid 2px rgb(25, 189, 154);
+}
+
+.block-heading {
+    font-size: 26px;
+    color: rgb(51, 59, 70);
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+.caption {
+    color: rgb(129, 134, 142);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.about-image {
+    margin: 30px;
+}
+
+.details-about {
+    background-color: rgb(243, 243, 243);
+}
+
+.details-about-content {
+    padding: 80px 0 100px;
+    text-align: center;
+}
+
+.tab {
+    cursor: pointer;
+    margin: 0 10px;
+    background: rgb(30, 30, 30);
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+    width: 40px;
+    height: 30px;
+    padding-top: 8px;
+}
+
+.radio {
+    display: none;
+}
+
+.details-tab-content {
+    display: none;
+    padding: 50px 0;
+    text-align: left;
+    animation: fadein 0.8s;
+    position: relative;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#one:checked~.panels #one-panel, #two:checked~.panels #two-panel, #three:checked~.panels #three-panel, #four:checked~.panels #four-panel {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+}
+
+#one:checked~.tabs #one-tab, #two:checked~.tabs #two-tab, #three:checked~.tabs #three-tab, #four:checked~.tabs #four-tab {
+    background: rgb(25, 189, 154);
+    color: #fff;
+}
+
+.details-tab-content-left {
+    max-width: 340px;
+}
+
+.details-tab-content-right {
+    max-width: 540px;
+    margin-top: 54px;
+}
+
+.green {
+    color: rgb(25, 189, 154);
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.impressed-heading {
+    color: white;
+}
+
+.about-impressed {
+    background-image: url(../image/IMPRESS_BACK.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-impressed-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.about-impressed-description {
+    max-width: 600px;
+}
+
+.about-impressed-img {
+    margin-top: -80px;
+}
+
+.subscribe {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.subscribe-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-email {
+    height: 30px;
+    width: 300px;
+    font-size: 22px;
+    padding-left: 20px;
+    margin-right: 1px;
+}
+
+.input-button {
+    text-decoration: none;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    font-size: 22px;
+}
+
+.input-button:hover {
+    background-color: rgb(25, 189, 154);
+}
+
+.pricing {
+    text-align: center;
+    background-image: url(../image/PRICE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 0 70px 0;
+}
+
+.price-heading {
+    color: rgb(255, 255, 255);
+}
+
+.pricing-table {
+    background-color: rgb(255, 255, 255);
+    width: 240px;
+    height: 256px;
+}
+
+.table-heading {
+    background-color: rgb(25, 189, 154);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px;
+    color: white;
+}
+
+.table-heading-text {
+    margin: 0;
+}
+
+.table-price {
+    padding: 20px 0 20px 0;
+}
+
+.table-price-price {
+    font-size: 40px;
+    color: rgb(25, 189, 154);
+    font-weight: 900;
+    margin: 0;
+}
+
+.start-button {
+    background-color: rgb(25, 189, 154);
+    padding: 16px 76px 16px 76px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: none;
+    overflow: hidden;
+    animation: slidein .3s;
+    position: relative;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pricing-table:hover .start-button {
+    display: block;
+}
+
+.pricing-blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

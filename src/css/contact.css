@@ -1,0 +1,268 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1124px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header {
+    position: relative;
+    background-color: rgba(25, 189, 154,0.6);
+    background-size: cover;
+    background-position: center;
+    z-index: 1111;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.menu-links-items {
+    font-family: 'Bowlby One SC', cursive;
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.header-content {
+    width: 1100px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-text {
+    padding: 5px 7px;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+}
+
+.menu-links-items li a {
+    text-decoration: none;
+    color: rgb(215, 213, 222);
+}
+
+.menu-links-items li {
+    margin: 0 10px;
+    padding: 0;
+    text-align: center;
+    border: solid 2px transparent;
+}
+
+.menu-links-items li:hover {
+    border: solid 2px white;
+    border-radius: 20px;
+}
+
+.active-page {
+    border: solid 2px white !important;
+    border-radius: 20px;
+}
+
+.menu-links-items-active {
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.logo-text:hover {
+    color: rgb(25, 189, 154);
+}
+
+.logo-text {
+    margin: auto 0;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.header-description {
+    color: white;
+    text-align: center;
+    margin: 150px 0 300px;
+}
+
+.header-header {
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.header-description-text {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.footer-name {
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.footer-name:hover {
+    color: rgb(25, 189, 154);
+}
+
+.footer-copyright {
+    color: gray;
+}
+
+.social-1, .social-2 {
+    margin: auto 2px;
+    max-height: 30px;
+    padding: 6px;
+    font-size: 22px;
+    border-radius: 50%;
+    background-color: rgb(59, 89, 152);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.social-2 {
+    background-color: rgb(38, 166, 209);
+}
+
+.fa-facebook {
+    padding: 6px 10px;
+}
+
+.block-heading {
+    font-size: 26px;
+    color: rgb(51, 59, 70);
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+.caption {
+    color: rgb(129, 134, 142);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.contact {
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.contact-block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact-block-content {
+    max-width: 300px;
+    width: 300px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+.first-block {
+    font-size: 50px;
+    background-image: url(../image/CONTACT-1.png);
+}
+
+.second-block {
+    font-size: 50px;
+    background-image: url(../image/CONTACT-2.png);
+}
+
+.third-block {
+    font-size: 50px;
+    background-image: url(../image/CONTACT-3.png);
+}
+
+.contact-block-heading-text {
+color: rgb(51, 59, 70);
+font-size: 20px;
+}
+
+.contact-message-text {
+    background: rgb(255, 255, 255);
+    max-width: 1032px;
+    width: 1032px;
+    height: 170px;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    border: 1px rgb(206, 206, 206) solid;
+    color: rgb(132, 132, 132);
+    font-size: 22px;
+    outline: 0;
+    margin-bottom: 30px;
+    
+}
+.contact-form-content {
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.contact-form-fields {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-field {
+    width: 300px;
+    height: 34px;
+    font-size: 22px;
+    padding-left: 10px;
+    color: rgb(51, 59, 70);
+    color: rgb(132, 132, 132);
+}
+
+.contact-button {
+    font-size: 30px;
+    width: 100%;
+    background-color: rgb(25, 189, 154);
+    padding: 5px 150px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: rgb(73, 240, 204);
+}
